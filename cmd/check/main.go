@@ -271,7 +271,7 @@ func parseRepository(repository string) (string, string) {
 		return officialRegistry, "library/" + segs[0]
 	}
 
-	fatal("malformed repository url")
+	fatal("malformed repository url:" + repository)
 	panic("unreachable")
 }
 
